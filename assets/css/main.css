@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import 'tailwindcss';
+
+
+
+:root {
+    --off-white: #ECECEC;
+    --font-sans: 'Roboto Mono', monospace;
+    --font-mono: 'Roboto Mono', monospace;
+}
+
+.font-alfa {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+body {
+    background-color: var(--off-white);
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+}
+
+@theme {
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+
+    --color-off-white: var(--off-white);
+}
