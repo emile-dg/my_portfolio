@@ -1,0 +1,54 @@
+{
+    "meta": {
+        "title": "Emile DJIDA G. – Full-Stack Software Engineer",
+        "description": "Full-stack software engineer building production-grade SaaS platforms, dashboards, APIs, and business systems across frontend, backend, deployment, security, and maintenance."
+    },
+    "header": {
+        "name": "EMILE DJIDA G.",
+        "nav": {
+            "home": "Home",
+            "experience": "Experience",
+            "contact": "Contact me"
+        },
+        "language": {
+            "label": "Language",
+            "en": "English",
+            "fr": "French"
+        }
+    },
+    "footer": {
+        "rights": "Emile DJIDA GONGDEBIYA © All rights reserved, 2026"
+    },
+    "hero": {
+        "line1": "Full-Stack",
+        "line2": "Software",
+        "line3": "Engineer",
+        "description1": "I build production-grade SaaS platforms, dashboards, APIs, and business systems across frontend, backend, deployment, security, and maintenance.",
+        "description2": "Open to full-time Full-Stack, Backend, and Product Engineering roles.",
+        "badge1": "5+ years of experience",
+        "badge2": "End-to-end delivery",
+        "badge3": "Open to full-time roles",
+        "resumeBtn": "Download Resume",
+        "caseStudiesBtn": "View Case Studies"
+    },
+    "experience": {
+        "heading": "Relevant Experience",
+        "viewRoleDetails": "View role details"
+    },
+    "projects": {
+        "heading": "Independent Product Work"
+    },
+    "contact": {
+        "heading": "Contact Me",
+        "email": {
+            "label": "Send me an Email"
+        },
+        "phone": {
+            "label": "Call me"
+        },
+        "whatsapp": {
+            "label": "Whatsapp",
+            "cta": "Send a text message"
+        }
+    }
+}

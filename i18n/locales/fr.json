@@ -1,0 +1,54 @@
+{
+    "meta": {
+        "title": "Emile DJIDA G. – Ingénieur Logiciel Full-Stack",
+        "description": "Ingénieur logiciel full-stack, développant des plateformes SaaS, tableaux de bord, APIs et systèmes métier en production, du frontend au backend, déploiement, sécurité et maintenance."
+    },
+    "header": {
+        "name": "EMILE DJIDA G.",
+        "nav": {
+            "home": "Accueil",
+            "experience": "Expérience",
+            "contact": "Me contacter"
+        },
+        "language": {
+            "label": "Langue",
+            "en": "Anglais",
+            "fr": "Français"
+        }
+    },
+    "footer": {
+        "rights": "Emile DJIDA GONGDEBIYA © Tous droits réservés, 2026"
+    },
+    "hero": {
+        "line1": "Full-Stack",
+        "line2": "Software",
+        "line3": "Engineer",
+        "description1": "Je développe des plateformes SaaS, tableaux de bord, APIs et systèmes métier en production, couvrant le frontend, le backend, le déploiement, la sécurité et la maintenance.",
+        "description2": "Disponible pour des postes à temps plein Full-Stack, Backend et Product Engineering.",
+        "badge1": "5+ ans d'expérience",
+        "badge2": "Livraison bout en bout",
+        "badge3": "Disponible pour des postes à temps plein",
+        "resumeBtn": "Télécharger le CV",
+        "caseStudiesBtn": "Voir les études de cas"
+    },
+    "experience": {
+        "heading": "Expérience Pertinente",
+        "viewRoleDetails": "Voir les détails du poste"
+    },
+    "projects": {
+        "heading": "Projets Indépendants"
+    },
+    "contact": {
+        "heading": "Me Contacter",
+        "email": {
+            "label": "Envoyez-moi un e-mail"
+        },
+        "phone": {
+            "label": "Appelez-moi"
+        },
+        "whatsapp": {
+            "label": "Whatsapp",
+            "cta": "Envoyer un message"
+        }
+    }
+}
