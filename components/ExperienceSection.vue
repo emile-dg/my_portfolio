@@ -2,7 +2,7 @@
 import SectionWrapper from '~/components/SectionWrapper.vue'
 import ExperienceCard from '~/components/ExperienceCard.vue'
 
-const { t } = useI18n()
+const {t} = useI18n()
 
 defineProps<{
     experiences: Array<{
@@ -29,6 +29,7 @@ defineProps<{
 
             <div class="col-span-12 space-y-4 md:col-span-11">
                 <ExperienceCard
+                    class="smooth-up-section-item"
                     v-for="item in experiences"
                     :key="item.role + item.company"
                     :role="item.role"

@@ -4,8 +4,13 @@ import ExperienceSection from '~/components/ExperienceSection.vue'
 import ProjectsSection from '~/components/ProjectsSection.vue'
 import StackSection from '~/components/StackSection.vue'
 import ContactSection from '~/components/ContactSection.vue'
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 const { t, locale, setLocale } = useI18n()
+const smoothUpSectionItem = ref<HTMLElement | null>(null)
+let ctx: gsap.Context | null = null
+
 
 useHead({
     title: () => t('meta.title'),
@@ -58,7 +63,6 @@ const experiences = [
             'Worked on full-stack web application development across frontend interfaces and backend features.',
     },
 ]
-
 const projects = [
     {
         name: 'Parametric Estimation Software',
@@ -71,11 +75,10 @@ const projects = [
         name: 'ERP Engine',
         description:
             'Experimental multi-app ERP backend engine for authentication, authorization, accounting, and business modules.',
-        link: 'xenty.io (closed)',
+        link: 'xentry.io (closed)',
         href: '#',
     },
 ]
-
 const stacks = [
     {
         category: 'Backend',
@@ -110,6 +113,41 @@ const stacks = [
         ],
     },
 ]
+
+onMounted(async () => {
+    gsap.registerPlugin(ScrollTrigger)
+    await nextTick()
+    if (!smoothUpSectionItem.value) return;
+    ctx = gsap.context(() => {
+        const cards = gsap.utils.toArray<HTMLElement>('.smooth-up-section-item')
+
+        cards.forEach((card) => {
+            gsap.fromTo(
+                card,
+                {
+                    opacity: 0,
+                    y: window.innerHeight * 0.15,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top 90%',
+                        end: 'top 55%',
+                        scrub: true,
+                        // markers: true,
+                    },
+                }
+            )
+        })
+    }, smoothUpSectionItem.value)
+})
+
+onBeforeUnmount(() => {
+    ctx?.revert()
+})
 </script>
 
 <template>
@@ -148,7 +186,7 @@ const stacks = [
     </header>
 
     <div class="min-h-screen text-black z-0">
-        <main>
+        <main class="space-y-24" ref="smoothUpSectionItem">
             <HeroSection/>
             <ExperienceSection :experiences="experiences"/>
             <ProjectsSection :projects="projects"/>

@@ -12,6 +12,7 @@ defineProps<{
 <template>
     <section class="container mx-auto grid grid-cols-12 gap-y-10 py-20">
         <StackGroup
+            class="smooth-up-section-item"
             v-for="group in stacks"
             :key="group.category"
             :category="group.category"

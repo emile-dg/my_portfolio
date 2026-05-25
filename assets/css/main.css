@@ -2,7 +2,6 @@
 @import 'tailwindcss';
 
 
-
 :root {
     --off-white: #ECECEC;
     --font-sans: 'Roboto Mono', monospace;
@@ -14,9 +13,9 @@
 }
 
 body {
+    overflow-x: hidden;
+    scroll-behavior: auto;
     background-color: var(--off-white);
-    scroll-behavior: smooth;
-    scroll-padding-top: 0;
 }
 
 @theme {

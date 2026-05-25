@@ -11,7 +11,7 @@ defineProps<{
     <section
         :id="id"
         :class="[
-            'container mx-auto grid grid-cols-12',
+            'container mx-auto p-4 lg:p-0 grid grid-cols-12',
             paddingY ?? 'py-16',
         ]"
     >

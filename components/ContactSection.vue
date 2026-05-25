@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ProjectCard from "~/components/ProjectCard.vue";
+
 const { t } = useI18n()
 </script>
 
@@ -8,7 +10,7 @@ const { t } = useI18n()
             {{ t('contact.heading') }}
         </h2>
 
-        <address class="col-span-12 mt-10 grid grid-cols-12 gap-8 bg-zinc-100 p-10 not-italic">
+        <address class="col-span-12 mt-10 grid grid-cols-12 gap-8 bg-zinc-100 p-10 not-italic smooth-up-section-item">
             <div class="col-span-12 md:col-span-3">
                 <h3 class="font-bold">{{ t('contact.email.label') }}</h3>
                 <a href="mailto:emiledjida404@gmail.com" class="mt-3 block underline">

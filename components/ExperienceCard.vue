@@ -11,6 +11,9 @@ defineProps<{
     summary: string
     detailsLink?: string
 }>()
+
+
+
 </script>
 
 <template>
