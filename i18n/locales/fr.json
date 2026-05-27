@@ -33,7 +33,8 @@
     },
     "experience": {
         "heading": "Expérience Pertinente",
-        "viewRoleDetails": "Voir les détails du poste"
+        "viewRoleDetails": "Voir les détails du poste",
+        "backToExperience": "Retour aux expériences"
     },
     "projects": {
         "heading": "Projets Indépendants"

@@ -29,6 +29,7 @@ const experiences = [
         period: 'Since March 2023',
         summary:
             'Led development across frontend, backend, deployment, security, and accounting workflows for a production SaaS platform.',
+        detailsLink: '/experience/cryptoaccounting',
     },
     {
         role: 'Lead Software Engineer, Cofounder & CTO',
@@ -37,6 +38,7 @@ const experiences = [
         period: 'From June 2024 - March 2026',
         summary:
             'Co-founded the company and led software architecture, product delivery, and client-facing technical decisions.',
+        detailsLink: '/experience/cealis-tech-studio',
     },
     {
         role: 'Lead Backend Developer',
@@ -45,6 +47,7 @@ const experiences = [
         period: 'From March 2022 - March 2023',
         summary:
             'Built backend services, APIs, and business logic for internal and client-facing applications.',
+        detailsLink: '/experience/kamix',
     },
     {
         role: 'Fullstack Software Engineer',
@@ -53,6 +56,7 @@ const experiences = [
         period: 'From October 2021 - February 2022',
         summary:
             'Worked on full-stack web application development across frontend interfaces and backend features.',
+        detailsLink: '/experience/clinkast',
     },
 ]
 const projects = [

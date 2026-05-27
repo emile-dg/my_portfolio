@@ -33,7 +33,8 @@
     },
     "experience": {
         "heading": "Relevant Experience",
-        "viewRoleDetails": "View role details"
+        "viewRoleDetails": "View role details",
+        "backToExperience": "Back to Experience"
     },
     "projects": {
         "heading": "Independent Product Work"
