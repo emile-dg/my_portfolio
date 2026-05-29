@@ -8,13 +8,14 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxt/image'],
     i18n: {
         locales: [
-            { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
-            { code: 'fr', iso: 'fr-FR', file: 'fr.json', name: 'Français' },
+            {code: 'en', iso: 'en-US', file: 'en.json', name: 'English'},
+            {code: 'fr', iso: 'fr-FR', file: 'fr.json', name: 'Français'},
         ],
-        defaultLocale: 'en',
         lazy: true,
+        defaultLocale: 'en',
         langDir: 'locales/',
-        strategy: 'no_prefix',
+        strategy: 'prefix_and_default',
+        baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://emiledjida.dev',
     },
     vite: {
         plugins: [

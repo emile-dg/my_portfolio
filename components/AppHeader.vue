@@ -1,12 +1,7 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-const { t, locale, setLocale } = useI18n()
-
-const locales = [
-    { code: 'en', label: 'English' },
-    { code: 'fr', label: 'Français' },
-]
+const { t, locale, setLocale, locales } = useI18n()
 
 function switchLocale(event: Event) {
     const code = (event.target as HTMLSelectElement).value as 'en' | 'fr'
@@ -17,7 +12,6 @@ function switchLocale(event: Event) {
 // Mobile menu state
 const menuOpen = ref(false)
 const menuOverlay = ref<HTMLElement | null>(null)
-const menuItems = ref<HTMLElement[]>([])
 
 let tl: gsap.core.Timeline | null = null
 
@@ -116,14 +110,16 @@ onBeforeUnmount(() => {
             <div class="flex items-center gap-3">
                 <!-- Language picker -->
                 <div class="relative inline-flex items-center border border-black">
+                    {{locale}}
                     <select
+                        v-if="locales.length > 1"
                         :value="locale"
                         @change="switchLocale"
-                        class="appearance-none bg-transparent pl-3 pr-7 py-1 text-sm font-bold cursor-pointer focus:outline-none"
                         :aria-label="$t('header.language.label')"
+                        class="appearance-none bg-transparent pl-3 pr-7 py-1 text-sm font-bold cursor-pointer focus:outline-none"
                     >
                         <option v-for="loc in locales" :key="loc.code" :value="loc.code">
-                            {{ loc.label }}
+                            {{loc.code}} {{ loc.name }}
                         </option>
                     </select>
                     <span class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-xs leading-none">▾</span>
@@ -131,7 +127,7 @@ onBeforeUnmount(() => {
 
                 <!-- Hamburger button (mobile only) -->
                 <button
-                    class="md:hidden relative flex flex-col justify-center items-center w-8 h-8 focus:outline-none z-[200]"
+                    class="md:hidden relative flex flex-col justify-center items-center w-8 h-8 focus:outline-none z-200"
                     :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
                     @click="toggleMenu"
                 >
