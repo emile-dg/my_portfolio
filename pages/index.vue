@@ -21,63 +21,57 @@ useHead({
 })
 
 
-const experiences = [
+const experiences = computed(() => [
     {
-        role: 'Lead Software Engineer',
-        company: 'CRYPTOACCOUNTING',
-        location: 'Paris, France.',
-        period: 'Since March 2023',
-        summary:
-            'Led development across frontend, backend, deployment, security, and accounting workflows for a production SaaS platform.',
+        role: t('experience.items[0].role'),
+        company: t('experience.items[0].company'),
+        location: t('experience.items[0].location'),
+        period: t('experience.items[0].period'),
+        summary: t('experience.items[0].summary'),
         detailsLink: '/experience/cryptoaccounting',
     },
     {
-        role: 'Lead Software Engineer, Cofounder & CTO',
-        company: 'CEALIS TECH STUDIO',
-        location: 'Yaounde, Cameroon.',
-        period: 'From June 2024 - March 2026',
-        summary:
-            'Co-founded the company and led software architecture, product delivery, and client-facing technical decisions.',
+        role: t('experience.items[1].role'),
+        company: t('experience.items[1].company'),
+        location: t('experience.items[1].location'),
+        period: t('experience.items[1].period'),
+        summary: t('experience.items[1].summary'),
         detailsLink: '/experience/cealis-tech-studio',
     },
     {
-        role: 'Lead Backend Developer',
-        company: 'KAMIX',
-        location: 'Yaounde, Cameroon.',
-        period: 'From March 2022 - March 2023',
-        summary:
-            'Built backend services, APIs, and business logic for internal and client-facing applications.',
-        detailsLink: '/experience/kamix',
+        role: t('experience.items[2].role'),
+        company: t('experience.items[2].company'),
+        location: t('experience.items[2].location'),
+        period: t('experience.items[2].period'),
+        summary: t('experience.items[2].summary'),
+        // detailsLink: '/experience/kamix',
     },
     {
-        role: 'Fullstack Software Engineer',
-        company: 'Clinkast',
-        location: 'Douala, Cameroon.',
-        period: 'From October 2021 - February 2022',
-        summary:
-            'Worked on full-stack web application development across frontend interfaces and backend features.',
-        detailsLink: '/experience/clinkast',
+        role: t('experience.items[3].role'),
+        company: t('experience.items[3].company'),
+        location: t('experience.items[3].location'),
+        period: t('experience.items[3].period'),
+        summary: t('experience.items[3].summary'),
+        // detailsLink: '/experience/clinkast',
     },
-]
-const projects = [
+])
+const projects = computed(() => [
     {
-        name: 'Parametric Estimation Software',
-        description:
-            'Construction cost estimation tool for preliminary project evaluation.',
+        name: t('projects.items[0].name'),
+        description: t('projects.items[0].description'),
         link: 'seleri.app (dev)',
         href: 'https://seleri.app',
     },
     {
-        name: 'ERP Engine',
-        description:
-            'Experimental multi-app ERP backend engine for authentication, authorization, accounting, and business modules.',
+        name: t('projects.items[1].name'),
+        description: t('projects.items[1].description'),
         link: 'xentry.io (closed)',
         href: '#',
     },
-]
-const stacks = [
+])
+const stacks = computed(() => [
     {
-        category: 'Backend',
+        category: t('stack.categories.backend'),
         items: [
             { name: 'Javascript\nTypescript', icon: '/images/js.png' },
             { name: 'Python', icon: '/images/python.png' },
@@ -85,7 +79,7 @@ const stacks = [
         ],
     },
     {
-        category: 'Frontend',
+        category: t('stack.categories.frontend'),
         items: [
             { name: 'VueJs', icon: '/images/vuejs.png' },
             { name: 'Nuxt', icon: '/images/nuxtjs.png' },
@@ -93,14 +87,14 @@ const stacks = [
         ],
     },
     {
-        category: 'Database',
+        category: t('stack.categories.database'),
         items: [
             { name: 'MySQL', icon: '/images/mysql.png' },
             { name: 'MongoDB', icon: '/images/mongodb.png' },
         ],
     },
     {
-        category: 'Others',
+        category: t('stack.categories.others'),
         items: [
             { name: 'Git', icon: '/images/git.png' },
             { name: 'AWS', icon: '/images/aws.png' },
@@ -108,7 +102,7 @@ const stacks = [
             { name: 'Figma', icon: '/images/figma.png' },
         ],
     },
-]
+])
 
 onMounted(async () => {
     gsap.registerPlugin(ScrollTrigger)

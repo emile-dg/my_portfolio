@@ -22,13 +22,13 @@ defineProps<{
             <h3 class="text-xl font-bold">{{ role }}</h3>
             <p class="max-w-xl">{{ summary }}</p>
             <p class="font-bold">- {{ period }}</p>
-            <nuxt-link
+            <nuxt-link-locale v-if="detailsLink?.trim()"
                 :to="detailsLink ?? '#'"
                 class="inline-flex gap-2 border text-black text-sm py-1 px-2 hover:bg-black hover:text-white"
             >
                 {{ t('experience.viewRoleDetails') }}
                 <ArrowRight :size="12"/>
-            </nuxt-link>
+            </nuxt-link-locale>
         </div>
 
         <div class="col-span-12 mt-8 text-left text-xl uppercase md:col-span-5 md:mt-0 md:text-right">

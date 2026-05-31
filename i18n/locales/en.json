@@ -34,10 +34,62 @@
     "experience": {
         "heading": "Relevant Experience",
         "viewRoleDetails": "View role details",
-        "backToExperience": "Back to Experience"
+        "backToExperience": "Back to Experience",
+        "items": [
+            {
+                "role": "Lead Software Engineer",
+                "company": "CRYPTOACCOUNTING",
+                "location": "Paris, France.",
+                "period": "Since March 2023",
+                "summary": "Led development across frontend, backend, deployment, security, and accounting workflows for a production SaaS platform.",
+                "detailsLink": "/experience/cryptoaccounting"
+            },
+            {
+                "role": "Lead Software Engineer, Cofounder & CTO",
+                "company": "CEALIS TECH STUDIO",
+                "location": "Yaounde, Cameroon.",
+                "period": "From June 2024 - March 2026",
+                "summary": "Co-founded the company and led software architecture, product delivery, and client-facing technical decisions.",
+                "detailsLink": "/experience/cealis-tech-studio"
+            },
+            {
+                "role": "Lead Backend Developer",
+                "company": "KAMIX",
+                "location": "Yaounde, Cameroon.",
+                "period": "From March 2022 - March 2023",
+                "summary": "Built backend services, APIs, and business logic for internal and client-facing applications.",
+                "detailsLink": "/experience/kamix"
+            },
+            {
+                "role": "Fullstack Software Engineer",
+                "company": "Clinkast",
+                "location": "Douala, Cameroon.",
+                "period": "From October 2021 - February 2022",
+                "summary": "Worked on full-stack web application development across frontend interfaces and backend features.",
+                "detailsLink": "/experience/clinkast"
+            }
+        ]
     },
     "projects": {
-        "heading": "Independent Product Work"
+        "heading": "Independent Product Work",
+        "items": [
+            {
+                "name": "Parametric Estimation Software",
+                "description": "Construction cost estimation tool for preliminary project evaluation."
+            },
+            {
+                "name": "ERP Engine",
+                "description": "Experimental multi-app ERP backend engine for authentication, authorization, accounting, and business modules."
+            }
+        ]
+    },
+    "stack": {
+        "categories": {
+            "backend": "Backend",
+            "frontend": "Frontend",
+            "database": "Database",
+            "others": "Others"
+        }
     },
     "contact": {
         "heading": "Contact Me",

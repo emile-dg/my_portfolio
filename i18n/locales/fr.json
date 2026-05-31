@@ -34,10 +34,62 @@
     "experience": {
         "heading": "Expérience Pertinente",
         "viewRoleDetails": "Voir les détails du poste",
-        "backToExperience": "Retour aux expériences"
+        "backToExperience": "Retour aux expériences",
+        "items": [
+            {
+                "role": "Ingénieur Logiciel Principal",
+                "company": "CRYPTOACCOUNTING",
+                "location": "Paris, France.",
+                "period": "Depuis mars 2023",
+                "summary": "Pilotage du développement frontend, backend, déploiement, sécurité et flux comptables d'une plateforme SaaS en production.",
+                "detailsLink": "/experience/cryptoaccounting"
+            },
+            {
+                "role": "Ingénieur Logiciel Principal, Cofondateur & CTO",
+                "company": "CEALIS TECH STUDIO",
+                "location": "Yaoundé, Cameroun.",
+                "period": "De juin 2024 à mars 2026",
+                "summary": "Cofondateur de l'entreprise, responsable de l'architecture logicielle, de la livraison produit et des décisions techniques clients.",
+                "detailsLink": "/experience/cealis-tech-studio"
+            },
+            {
+                "role": "Développeur Backend Principal",
+                "company": "KAMIX",
+                "location": "Yaoundé, Cameroun.",
+                "period": "De mars 2022 à mars 2023",
+                "summary": "Développement de services backend, d'APIs et de la logique métier pour des applications internes et clients.",
+                "detailsLink": "/experience/kamix"
+            },
+            {
+                "role": "Ingénieur Logiciel Fullstack",
+                "company": "Clinkast",
+                "location": "Douala, Cameroun.",
+                "period": "D'octobre 2021 à février 2022",
+                "summary": "Développement d'applications web full-stack, des interfaces frontend aux fonctionnalités backend.",
+                "detailsLink": "/experience/clinkast"
+            }
+        ]
     },
     "projects": {
-        "heading": "Projets Indépendants"
+        "heading": "Projets Indépendants",
+        "items": [
+            {
+                "name": "Logiciel d'Estimation Paramétrique",
+                "description": "Outil d'estimation des coûts de construction pour l'évaluation préliminaire de projets."
+            },
+            {
+                "name": "Moteur ERP",
+                "description": "Moteur ERP backend expérimental multi-applications pour l'authentification, les autorisations, la comptabilité et les modules métier."
+            }
+        ]
+    },
+    "stack": {
+        "categories": {
+            "backend": "Backend",
+            "frontend": "Frontend",
+            "database": "Base de données",
+            "others": "Autres"
+        }
     },
     "contact": {
         "heading": "Me Contacter",

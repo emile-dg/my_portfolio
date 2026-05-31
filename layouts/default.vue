@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LoadingScreen from '~/components/LoadingScreen.vue'
+</script>
+
 <template>
+    <LoadingScreen />
     <slot/>
 </template>

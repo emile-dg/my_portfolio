@@ -97,20 +97,19 @@ onBeforeUnmount(() => {
         <div class="container mx-auto py-5 px-4 flex items-center justify-between text-xl font-bold">
 
             <!-- Logo / Name -->
-            <nuxt-link to="/" class="shrink-0">{{ $t('header.name') }}</nuxt-link>
+            <nuxt-link-locale to="/" class="shrink-0">{{ $t('header.name') }}</nuxt-link-locale>
 
             <!-- Desktop nav (hidden on mobile) -->
             <nav class="hidden md:flex gap-8 items-center">
-                <nuxt-link active-class="underline" to="/">{{ $t('header.nav.home') }}</nuxt-link>
-                <nuxt-link active-class="underline" to="#experience">{{ $t('header.nav.experience') }}</nuxt-link>
-                <nuxt-link active-class="underline" to="#contact">{{ $t('header.nav.contact') }}</nuxt-link>
+                <nuxt-link-locale active-class="underline" to="/">{{ $t('header.nav.home') }}</nuxt-link-locale>
+                <nuxt-link-locale active-class="underline" to="#experience">{{ $t('header.nav.experience') }}</nuxt-link-locale>
+                <nuxt-link-locale active-class="underline" to="#contact">{{ $t('header.nav.contact') }}</nuxt-link-locale>
             </nav>
 
             <!-- Right side: language picker + hamburger -->
             <div class="flex items-center gap-3">
                 <!-- Language picker -->
                 <div class="relative inline-flex items-center border border-black">
-                    {{locale}}
                     <select
                         v-if="locales.length > 1"
                         :value="locale"
@@ -119,7 +118,7 @@ onBeforeUnmount(() => {
                         class="appearance-none bg-transparent pl-3 pr-7 py-1 text-sm font-bold cursor-pointer focus:outline-none"
                     >
                         <option v-for="loc in locales" :key="loc.code" :value="loc.code">
-                            {{loc.code}} {{ loc.name }}
+                            {{ loc.name }}
                         </option>
                     </select>
                     <span class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-xs leading-none">▾</span>
@@ -171,27 +170,27 @@ onBeforeUnmount(() => {
             </button>
 
             <nav class="flex flex-col gap-8">
-                <nuxt-link
+                <nuxt-link-locale
                     class="menu-item text-4xl font-bold tracking-tight opacity-0 text-left"
                     to="/"
                     @click="closeMenu"
                 >
                     {{ $t('header.nav.home') }}
-                </nuxt-link>
-                <nuxt-link
+                </nuxt-link-locale>
+                <nuxt-link-locale
                     class="menu-item text-4xl font-bold tracking-tight opacity-0 text-left"
                     to="#experience"
                     @click="closeMenu"
                 >
                     {{ $t('header.nav.experience') }}
-                </nuxt-link>
-                <nuxt-link
+                </nuxt-link-locale>
+                <nuxt-link-locale
                     class="menu-item text-4xl font-bold tracking-tight opacity-0 text-left"
                     to="#contact"
                     @click="closeMenu"
                 >
                     {{ $t('header.nav.contact') }}
-                </nuxt-link>
+                </nuxt-link-locale>
 
                 <!-- Language picker in overlay -->
                 <div class="menu-item opacity-0 mt-4">

@@ -2,6 +2,17 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+    app: {
+        head: {
+            script: [
+                {
+                    // Immediately hide document to prevent flash before LoadingScreen mounts
+                    innerHTML: `document.documentElement.style.visibility='hidden'`,
+                    tagPosition: 'head',
+                },
+            ],
+        },
+    },
     compatibilityDate: '2024-04-03',
     devtools: {enabled: true},
     css: ['~/assets/css/main.css'],

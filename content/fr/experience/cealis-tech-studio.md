@@ -83,55 +83,6 @@ Le studio disposait d'un produit interne utilisable et bien architecturé, pouva
 
 ---
 
-### Logiciel d'estimation paramétrique — Seleri
-
-**Problème**
-
-Les maîtres d'ouvrage et ingénieurs en construction avaient besoin d'un outil pour estimer les coûts de projet en phase de planification initiale, avant que le travail de conception détaillée ne commence. L'estimation paramétrique — estimer à partir de paramètres de haut niveau plutôt que de métrés détaillés — est une pratique standard dans les grands marchés de construction, mais peu accessible aux petites entreprises de la région.
-
-**Ce que j'ai construit**
-
-J'ai dirigé l'architecture et le développement de Seleri, un outil d'estimation de coûts paramétrique accessible sur le web. L'application permettait aux utilisateurs de définir des paramètres de projet et de recevoir des estimations de coûts structurées basées sur une base de données de coûts configurable.
-
-**Travail technique**
-
-- Conception de l'architecture système : frontend Nuxt, API Node.js/TypeScript, base de données relationnelle structurée
-- Construction du moteur d'estimation : calcul de coûts piloté par les paramètres avec modèles de coûts configurables
-- Conception du modèle de données pour les types de projets, catégories de coûts et mappings de paramètres
-- Implémentation de l'interface utilisateur pour la saisie des paramètres, la révision des estimations et l'export
-- Mise en place du déploiement et de la configuration d'environnement
-- Construction de l'interface admin pour gérer les modèles de coûts et les configurations de paramètres
-
-**Impact**
-
-Livraison d'un outil d'estimation fonctionnel accessible via le web. Le produit répondait à un vrai manque d'outils pour la planification des coûts de construction en phase initiale sur le marché.
-
----
-
-### Moteur ERP — Xentry
-
-**Problème**
-
-Au fur et à mesure que le studio grandissait, il devenait clair que de nombreux produits clients partageaient les mêmes exigences fondamentales : authentification, autorisation, gestion de données multi-tenant, modules comptables et logique métier pluggable. Construire tout cela from scratch pour chaque projet était inefficace et incohérent.
-
-**Ce que j'ai construit**
-
-J'ai architecturé et prototypé un moteur ERP backend modulaire — Xentry — conçu pour servir de plateforme interne partagée pour plusieurs produits SaaS. Le moteur fournissait des modules réutilisables et configurables pour la logique métier commune.
-
-**Travail technique**
-
-- Définition de l'architecture modulaire : moteur central avec modules métier pluggables
-- Conception et implémentation du système d'authentification et d'autorisation (multi-tenant, RBAC)
-- Construction du module comptable : primitives de comptabilité en partie double, plan comptable, écritures de journal
-- Conception des contrats d'interface de modules permettant d'ajouter de la logique métier spécifique sans modifier le cœur
-- Documentation de l'architecture et des contrats de modules pour l'équipe
-
-**Impact**
-
-Le moteur a réduit le coût de démarrage pour les nouveaux projets. Les modules communs — auth, comptabilité, gestion des tenants — étaient disponibles et testés, permettant aux nouveaux projets de démarrer depuis une base fonctionnelle plutôt que de zéro.
-
----
-
 ### Réalisations clients personnalisées
 
 **Problème**
@@ -201,7 +152,6 @@ Côté client, j'ai géré toute la communication technique : recueil des besoin
 
 - Co-fondation et direction de l'opération technique d'un studio d'ingénierie logicielle
 - Livraison de quatre projets clients à fort impact en production sur environ deux ans
-- Construction et livraison de deux produits internes : Seleri (estimation paramétrique) et Xentry (moteur ERP)
 - Conception et implémentation du backend complet d'une plateforme d'analytique de données sportives
 - Construction des applications client front-facing pour le produit de deep-link du studio
 - Recrutement, intégration et mentorat de développeurs juniors
