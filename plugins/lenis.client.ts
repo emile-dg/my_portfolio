@@ -9,7 +9,7 @@ export default defineNuxtPlugin(() => {
     const lenis = new Lenis({
         duration: 1.4,
         smoothWheel: true,
-        wheelMultiplier: 0.85,
+        wheelMultiplier: 0.95,
     })
 
     lenis.on('scroll', ScrollTrigger.update)

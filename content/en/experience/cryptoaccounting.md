@@ -3,7 +3,7 @@ slug: cryptoaccounting
 title: Lead Software Engineer
 company: CRYPTOACCOUNTING
 location: Paris, France
-period: Since March 2023
+period: Since May 2023
 summary: Sole technical owner of a production SaaS platform for crypto-accounting professionals — architecting, building, securing, and shipping the full product from backend engine to frontend interface.
 tags:
   - Full-stack ownership

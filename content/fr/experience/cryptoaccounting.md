@@ -3,7 +3,7 @@ slug: cryptoaccounting
 title: Ingénieur Logiciel Lead
 company: CRYPTOACCOUNTING
 location: Paris, France
-period: Depuis mars 2023
+period: Depuis Mai 2023
 summary: Responsable technique unique d'une plateforme SaaS en production pour les professionnels de la comptabilité crypto — architecture, développement, sécurité et livraison du produit complet, du moteur backend à l'interface frontend.
 tags:
   - Ownership full-stack

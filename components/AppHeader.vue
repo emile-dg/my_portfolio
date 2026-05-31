@@ -102,8 +102,8 @@ onBeforeUnmount(() => {
             <!-- Desktop nav (hidden on mobile) -->
             <nav class="hidden md:flex gap-8 items-center">
                 <nuxt-link-locale active-class="underline" to="/">{{ $t('header.nav.home') }}</nuxt-link-locale>
-                <nuxt-link-locale active-class="underline" to="#experience">{{ $t('header.nav.experience') }}</nuxt-link-locale>
-                <nuxt-link-locale active-class="underline" to="#contact">{{ $t('header.nav.contact') }}</nuxt-link-locale>
+                <nuxt-link active-class="underline" to="#experience">{{ $t('header.nav.experience') }}</nuxt-link>
+                <nuxt-link active-class="underline" to="#contact">{{ $t('header.nav.contact') }}</nuxt-link>
             </nav>
 
             <!-- Right side: language picker + hamburger -->

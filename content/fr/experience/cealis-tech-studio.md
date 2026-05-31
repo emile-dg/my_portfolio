@@ -1,4 +1,4 @@
----
+﻿---
 slug: cealis-tech-studio
 title: Ingénieur Logiciel Lead, Cofondateur & CTO
 company: CEALIS TECH STUDIO
@@ -112,7 +112,7 @@ Livraison de quatre projets à fort impact sur environ deux ans. Chaque projet a
 
 **Pourquoi c'était difficile** — Le défi n'était pas purement technique. Il demandait une priorisation constante, des conversations honnêtes avec les clients sur le périmètre, et s'assurer que les développeurs juniors apprenaient tout en livrant.
 
-**Comment je l'ai abordé** — J'ai investi tôt dans la mise en place d'une infrastructure partagée et de standards d'ingénierie : conventions de dépôts, processus de revue de code et composants partagés réutilisables entre projets. Cela a réduit la charge par projet. J'ai également pris des décisions délibérées sur ce qu'il fallait construire en interne (Xentry) vs. ce qu'il fallait acheter ou utiliser off-the-shelf.
+**Comment je l'ai abordé** — J'ai investi tôt dans la mise en place d'une infrastructure partagée et de standards d'ingénierie : conventions de dépôts, processus de revue de code et composants partagés réutilisables entre projets. Cela a réduit la charge par projet. J'ai également pris des décisions délibérées sur ce qu'il fallait construire en interne vs. ce qu'il fallait acheter ou utiliser off-the-shelf, en maintenant la qualité sur l'ensemble des livraisons.
 
 **Résultat** — Livraison de quatre projets clients en production sur deux ans, tout en développant les outils internes du studio et en faisant progresser un membre junior de l'équipe vers l'autonomie.
 
@@ -124,15 +124,13 @@ Livraison de quatre projets à fort impact sur environ deux ans. Chaque projet a
 
 **Pourquoi c'était difficile** — Identifier le bon niveau d'abstraction pour les modules partagés n'est pas trivial. Trop abstraits, les modules sont difficiles à utiliser ; trop spécifiques, ils ne se généralisent pas.
 
-**Comment je l'ai abordé** — J'ai identifié les préoccupations communes essentielles entre projets — authentification, autorisation, isolation des tenants, primitives comptables — et j'ai construit le moteur Xentry autour de celles-ci. J'ai maintenu les contrats d'interface de modules explicites et documentés, ce qui permettait aux membres de l'équipe de les utiliser sans comprendre entièrement les internals.
+**Comment je l'ai abordé** — J'ai identifié les préoccupations communes essentielles entre projets — authentification, autorisation, isolation des tenants, primitives comptables — et j'ai construit des modules partagés autour de celles-ci. J'ai maintenu les contrats d'interface de modules explicites et documentés, ce qui permettait aux membres de l'équipe de les utiliser sans comprendre entièrement les internals.
 
 **Résultat** — Les nouveaux projets démarraient depuis une base fonctionnelle plutôt que de zéro, ce qui réduisait significativement le temps avant le premier build fonctionnel.
 
 ## Décisions d'architecture & d'ingénierie
 
 **Infrastructure studio** — L'investissement précoce dans les outils partagés a payé. La structure de dépôt standardisée, les templates CI/CD et une bibliothèque de composants partagée signifiaient que les nouveaux projets se lançaient plus vite et maintenaient une qualité cohérente.
-
-**Conception des modules Xentry** — Le moteur ERP a été conçu autour d'interfaces de modules explicites, pas d'héritage ou de couplage fort. Cela signifiait que chaque module pouvait être testé et déployé indépendamment, et que de nouveaux modules pouvaient être ajoutés sans toucher aux modules existants.
 
 **Architecture frontend** — Nuxt était le framework frontend par défaut pour les projets du studio, offrant les capacités SSR et un modèle de développement cohérent. Les bibliothèques de composants Vue étaient réutilisées entre projets là où c'était applicable.
 

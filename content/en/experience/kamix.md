@@ -3,7 +3,7 @@ slug: kamix
 title: Lead Backend Developer
 company: KAMIX
 location: Yaounde, Cameroon
-period: March 2022 – March 2023
+period: March 2022 – May 2023
 summary: Owned backend development for internal systems and a client-facing product co-owned by the company, and led the design and implementation of an internal KYC backend prototype.
 tags:
   - Backend systems

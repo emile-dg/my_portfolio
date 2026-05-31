@@ -83,55 +83,6 @@ The studio had a usable, well-architected internal product that could be demonst
 
 ---
 
-### Parametric Estimation Software — Seleri
-
-**Problem**
-
-Construction project owners and engineers needed a tool to estimate project costs in the early planning phase, before detailed design work begins. Parametric estimation — estimating based on high-level parameters rather than itemized bills of quantities — is standard practice in large construction markets but poorly served by existing tools accessible to smaller firms in the region.
-
-**What I Built**
-
-I led the architecture and development of Seleri, a web-based parametric cost estimation tool. The application allowed users to define project parameters and receive structured cost estimates based on a configurable cost database.
-
-**Technical Work**
-
-- Designed the system architecture: Nuxt frontend, Node.js/TypeScript API, structured relational database
-- Built the estimation engine: parameter-driven cost computation with configurable cost models
-- Designed the data model for project types, cost categories, and parameter mappings
-- Implemented the user interface for parameter input, estimate review, and export
-- Set up deployment and environment configuration
-- Built the admin interface for managing cost models and parameter configurations
-
-**Impact**
-
-Delivered a working estimation tool accessible via the web. The product addressed a real gap in tooling for early-stage construction cost planning in the market.
-
----
-
-### ERP Engine — Xentry
-
-**Problem**
-
-As the studio grew, it became clear that many client products shared the same foundational requirements: authentication, authorization, multi-tenant data management, accounting modules, and pluggable business logic. Building these from scratch for every project was inefficient and inconsistent.
-
-**What I Built**
-
-I architected and prototyped a modular ERP backend engine — Xentry — designed to serve as a shared internal platform for multiple SaaS products. The engine provided reusable, configurable modules for common business logic.
-
-**Technical Work**
-
-- Defined the modular architecture: core engine with pluggable business modules
-- Designed and implemented the authentication and authorization system (multi-tenant, RBAC)
-- Built the accounting module: double-entry bookkeeping primitives, chart of accounts, journal entries
-- Designed the module interface contracts to allow plugging in business-specific logic without modifying the core
-- Documented the architecture and module contracts for team consumption
-
-**Impact**
-
-The engine reduced the baseline setup cost for new projects. Common modules — auth, accounting, tenant management — were available and tested, allowing new projects to start from a working foundation rather than from zero.
-
----
-
 ### Client Custom Builds
 
 **Problem**
@@ -161,7 +112,7 @@ Delivered four high-impact projects over approximately two years. Each project w
 
 **Why it was difficult** — The challenge was not purely technical. It required constant prioritization, honest scoping conversations with clients, and ensuring that junior developers were learning while still delivering.
 
-**How I approached it** — I invested early in setting up shared infrastructure and engineering standards: repository conventions, code review processes, and shared components that could be reused across projects. This reduced per-project overhead. I also made deliberate decisions about what to build in-house (Xentry) vs. what to buy or use off-the-shelf.
+**How I approached it** — I invested early in setting up shared infrastructure and engineering standards: repository conventions, code review processes, and shared components that could be reused across projects. This reduced per-project overhead and kept quality consistent across deliveries.
 
 **Result** — Delivered four client projects to production over two years while developing the studio's internal tooling and growing a junior team member to become independently productive.
 
@@ -173,15 +124,13 @@ Delivered four high-impact projects over approximately two years. Each project w
 
 **Why it was difficult** — Identifying the right abstraction level for shared modules is non-trivial. Too abstract and the modules are hard to use; too specific and they don't generalize.
 
-**How I approached it** — I identified the core shared concerns across projects — authentication, authorization, tenant isolation, accounting primitives — and built the Xentry engine around those. I kept the module interface contracts explicit and documented, which made it possible for team members to use them without fully understanding the internals.
+**How I approached it** — I identified the core shared concerns across projects — authentication, authorization, tenant isolation — and built shared modules around those. I kept the interface contracts explicit and documented, which made it possible for team members to use them without fully understanding the internals.
 
 **Result** — New projects started from a working base rather than from zero, which meaningfully reduced time-to-first-working-build.
 
 ## Architecture & Engineering Decisions
 
 **Studio infrastructure** — Early investment in shared tooling paid off. Standardized repository structure, CI/CD templates, and a shared component library meant that new projects launched faster and maintained consistent quality.
-
-**Xentry module design** — The ERP engine was designed around explicit module interfaces, not inheritance or tight coupling. This meant each module could be tested and deployed independently, and new modules could be added without touching existing ones.
 
 **Frontend architecture** — Nuxt was the default frontend framework for studio projects, providing SSR capabilities and a consistent development model. Vue component libraries were reused across projects where applicable.
 
@@ -201,7 +150,6 @@ On the client side, I managed all technical communication: requirements gatherin
 
 - Co-founded and led the technical operation of a software engineering studio
 - Delivered four high-impact client projects to production over approximately two years
-- Built and shipped two internal products: Seleri (parametric estimation) and Xentry (ERP engine)
 - Designed and implemented the full backend for a sports data analytics platform
 - Built the front-facing client applications for the studio's deep-link product
 - Recruited, onboarded, and mentored junior developers

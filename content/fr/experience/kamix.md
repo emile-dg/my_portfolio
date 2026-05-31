@@ -3,7 +3,7 @@ slug: kamix
 title: Développeur Backend Lead
 company: KAMIX
 location: Yaoundé, Cameroun
-period: Mars 2022 – Mars 2023
+period: Mars 2022 – Mai 2023
 summary: Responsable du développement backend pour des systèmes internes et un produit client co-possédé par l'entreprise, et co-concepteur d'un prototype backend KYC interne.
 tags:
   - Systèmes backend

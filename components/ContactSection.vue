@@ -38,10 +38,12 @@ const { t } = useI18n()
             </div>
 
             <div class="col-span-12 flex gap-5 md:col-span-3 md:justify-end">
-                <nuxt-link to="https://github.com/emiledjida404" aria-label="GitHub">
+                <nuxt-link to="https://github.com/emile-dg" aria-label="GitHub">
                     GitHub
                 </nuxt-link>
-                <nuxt-link to="#" aria-label="LinkedIn">LinkedIn</nuxt-link>
+                <nuxt-link to="https://www.linkedin.com/in/emile-djida-gongdebiya58b361197" aria-label="LinkedIn">
+                    LinkedIn
+                </nuxt-link>
             </div>
         </address>
     </section>
