@@ -86,7 +86,13 @@ onBeforeUnmount(() => {
                 </div>
 
                 <div ref="resumeBtnRef" class="flex lg:items-end lg:justify-end gap-2">
-                    <BaseButton href="/Resume - Emile D.G.2026.07.pdf" variant="primary">{{ $t('hero.resumeBtn') }}</BaseButton>
+                    <BaseButton
+                        href="/my_resume.pdf"
+                        variant="primary"
+                        download="Resume.Emile.D.G.pdf"
+                        target="_blank">
+                        {{ $t('hero.resumeBtn') }}
+                    </BaseButton>
                     <!--                    <BaseButton to="#experience" variant="secondary">{{ $t('hero.caseStudiesBtn') }}</BaseButton>-->
                 </div>
             </div>
