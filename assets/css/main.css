@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 
 :root {
     --off-white: #ECECEC;
-    --font-sans: 'Roboto Mono', monospace;
-    --font-mono: 'Roboto Mono', monospace;
+    --font-sans: 'Instrument Sans', sans-serif;
 }
 
-.font-alfa {
-    font-family: 'Alfa Slab One', cursive;
+.font-display {
+    font-family: 'Big Shoulders', sans-serif;
 }
 
 body {
     overflow-x: hidden;
     scroll-behavior: auto;
-    background-color: var(--off-white);
+    @apply bg-dark-bg;
 }
 
 @theme {
@@ -24,4 +23,14 @@ body {
     --font-mono: var(--font-mono);
 
     --color-off-white: var(--off-white);
+
+
+    /* NEW */
+    --color-primary: #0431E4;
+    --color-primary-fg: #FFFFFF;
+
+    --color-muted: #778DA3;
+    --color-dark-bg: #080B0E;
+    --color-dark-soft: #0F151B;
+    --color-dark-fg: #FFFFFF;
 }

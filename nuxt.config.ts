@@ -7,8 +7,8 @@ export default defineNuxtConfig({
             script: [
                 {
                     // Immediately hide document to prevent flash before LoadingScreen mounts
-                    innerHTML: `document.documentElement.style.visibility='hidden'`,
-                    tagPosition: 'head',
+                    // innerHTML: `document.documentElement.style.visibility='hidden'`,
+                    // tagPosition: 'head',
                 },
             ],
         },

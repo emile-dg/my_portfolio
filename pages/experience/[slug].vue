@@ -41,7 +41,7 @@ useHead({
             <p class="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-3">
                 {{ experience?.period }}
             </p>
-            <h1 class="font-alfa text-[clamp(2rem,6vw,5rem)] uppercase leading-tight mb-4">
+            <h1 class="font-display text-[clamp(2rem,6vw,5rem)] uppercase leading-tight mb-4">
                 {{ experience?.company }}
             </h1>
             <p class="text-xl font-bold mb-2">{{ experience?.title }}</p>
@@ -51,7 +51,7 @@ useHead({
         <!-- Markdown prose content -->
         <div class="prose prose-zinc max-w-4xl mx-auto
             prose-headings:font-bold prose-headings:uppercase prose-headings:tracking-tight
-            prose-h1:text-4xl prose-h1:font-alfa
+            prose-h1:text-4xl prose-h1:font-display
             prose-h2:text-2xl prose-h2:border-b prose-h2:border-black prose-h2:pb-2 prose-h2:mt-12
             prose-h3:text-lg prose-h3:mt-8
             prose-p:leading-relaxed

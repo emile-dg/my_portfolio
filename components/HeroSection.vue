@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
     <section ref="heroRef" class="container mx-auto p-4 xl:px-0 grid grid-cols-12 pt-16 pb-28 overflow-x-hidden">
         <!-- Big title -->
         <div class="col-span-12">
-            <div class="font-alfa space-y-4 font-bold uppercase leading-[0.85] text-[clamp(4rem,10vw,150px)]">
+            <div class="font-display space-y-4 font-bold uppercase leading-[0.85] text-[clamp(4rem,10vw,150px)]">
                 <div ref="fullstackRef" class="block">
                     <span class="hero-title-text-1">{{ $t('hero.line1') }}</span>
                 </div>
