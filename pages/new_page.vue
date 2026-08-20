@@ -279,7 +279,7 @@ onBeforeUnmount(() => {
                 </div>
             </div>
             <div class="flex fluted overflow-hidden gap-0">
-                <svg class="fluted-svg" v-for="i in 30" :key="i" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="fluted-svg" v-for="i in 25" :key="i" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <foreignObject x="-180" y="-181" width="429.12" height="1322.62">
                         <div xmlns="http://www.w3.org/1999/xhtml"
                              style="backdrop-filter:blur(120px);clip-path:url(#bgblur_0_43_227_clip_path);height:100%;width:100%"></div>
@@ -324,7 +324,7 @@ onBeforeUnmount(() => {
                             </div>
                             <div class="md:col-span-4 inline-flex items-center justify-center order-1 md:order-2">
                                 <div
-                                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-display font-bold text-center select-none tracking-tighter capitalize">
+                                    class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-display font-bold text-center select-none tracking-tighter capitalize">
                                     <span>Emile</span>
                                     <span>Djida</span>
                                 </div>
@@ -341,18 +341,18 @@ onBeforeUnmount(() => {
                 <section class="w-screen">
                     <div class="container w-full px-4 sm:px-6 xl:px-0 lg:mx-auto max-w-6xl">
                         <div class="w-full py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32 space-y-6 sm:space-y-8">
-                            <h1 class="inline-flex flex-col text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-[164px] font-display leading-none">
+                            <h1 class="inline-flex flex-col text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-[164px] font-display leading-none">
                                 <span>Senior Full-Stack</span>
                                 <span>& Product Engineer</span>
                             </h1>
-                            <div class="flex flex-col lg:flex-row lg:items-between gap-6 lg:gap-8">
+                            <div class="flex flex-col xl:flex-row lg:items-between gap-6 lg:gap-8">
                                 <div class="w-full space-y-3 sm:space-y-4">
-                                    <p class="text-sm sm:text-base md:text-lg text-balance">
+                                    <p class="text-sm sm:text-base md:text-lg text-pretty">
                                         I design and build production-grade software from end-to-end — from product UX and system architecture to
                                         frontend,
                                         backend, APIs, databases, deployment, and long-term evolution.
                                     </p>
-                                    <p class="text-sm sm:text-base md:text-lg text-balance">
+                                    <p class="text-sm sm:text-base md:text-lg text-pretty">
                                         I work at the intersection of engineering and product design, turning complex requirements into reliable
                                         systems
                                         and
@@ -360,16 +360,21 @@ onBeforeUnmount(() => {
                                     </p>
                                 </div>
                                 <div class="w-full space-y-3 sm:space-y-4">
-                                    <div class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:justify-end">
-                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">4+ years of experience
+                                    <div class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 xl:justify-end">
+                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">
+                                            4+ years of experience
                                         </div>
-                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">End-to-End Delivery
+                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">
+                                            End-to-End Delivery
                                         </div>
-                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">Open to senior roles
+                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">
+                                            Open to senior roles
                                         </div>
-                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">AI automation</div>
+                                        <div class="px-3 py-1.5 sm:px-4 sm:py-2 bg-dark-soft text-xs sm:text-sm md:text-base">
+                                            AI automation
+                                        </div>
                                     </div>
-                                    <div class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 lg:justify-end">
+                                    <div class="flex flex-wrap gap-2 sm:gap-3 md:gap-4 xl:justify-end">
                                         <button
                                             class="w-full sm:w-auto sm:min-w-[200px] md:w-74 h-14 sm:h-16 md:h-20 text-sm sm:text-base md:text-lg text-primary-fg bg-primary font-bold transition-all hover:bg-primary-fg hover:scale-105 hover:text-primary cursor-pointer active:scale-95 duration-50">
                                             Download Resume
@@ -380,7 +385,8 @@ onBeforeUnmount(() => {
                         </div>
                     </div>
                 </section>
-                <section class="bg-dark-bg py-24">
+
+                <section class=" py-24">
                     <div class="container mx-auto  px-12">
                         <h1 class="text-4xl lg:text-6xl 2xl:text-9xl font-display text-center">
                             From Ideas to Production
@@ -394,9 +400,105 @@ onBeforeUnmount(() => {
                     </div>
                 </section>
 
-                <footer class="bg-dark-bg">
-                    <div class="container mx-auto xl:px-0 lg:mx-auto max-w-6xl">
-                        <div class="text-center p-8">
+                <footer class="relative h-screen overflow-x-hidden">
+                    <div class="-z-1 absolute bottom-0 lg:-bottom-1/6 left-1/2 -translate-x-1/2">
+                        <svg width="1728" height="1523" viewBox="0 0 1728 1523" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_55_37)">
+                                <path
+                                    d="M1302.5 1049.54C1302.5 1518.73 1105.05 1899.08 861.486 1899.08C617.92 1899.08 420.472 1518.73 420.472 1049.54C420.472 580.353 757.67 1118.52 861.486 200C1042.95 1125.26 1302.5 580.353 1302.5 1049.54Z"
+                                    fill="url(#paint0_radial_55_37)" fill-opacity="0.2"/>
+                            </g>
+                            <g filter="url(#filter1_f_55_37)">
+                                <path
+                                    d="M1728 1484.04C1728 1760.52 1342.3 1984.65 866.513 1984.65C390.727 1984.65 5.02637 1760.52 5.02637 1484.04C5.02637 1207.56 645.704 1533.16 866.513 983.434C1240.7 1517.4 1728 1207.56 1728 1484.04Z"
+                                    fill="#0033FF"/>
+                            </g>
+                            <g filter="url(#filter2_f_55_37)">
+                                <path
+                                    d="M1190 1349.17C1190 1700.14 1045.17 1984.65 866.513 1984.65C687.856 1984.65 543.026 1700.14 543.026 1349.17C543.026 998.209 827.621 912.932 866.513 713.695C981.841 1016.35 1190 998.209 1190 1349.17Z"
+                                    fill="#0033FF"/>
+                            </g>
+                            <g filter="url(#filter3_f_55_37)">
+                                <ellipse cx="861.487" cy="1433.32" rx="642.514" ry="397.239" fill="#206FC8"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_f_55_37" x="220.472" y="0" width="1282.03" height="2099.08" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_55_37"/>
+                                </filter>
+                                <filter id="filter1_f_55_37" x="-194.974" y="783.434" width="2122.97" height="1401.22" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_55_37"/>
+                                </filter>
+                                <filter id="filter2_f_55_37" x="343.026" y="513.695" width="1046.97" height="1670.96" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_55_37"/>
+                                </filter>
+                                <filter id="filter3_f_55_37" x="18.9727" y="836.082" width="1685.03" height="1194.48" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_55_37"/>
+                                </filter>
+                                <radialGradient id="paint0_radial_55_37" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                                gradientTransform="translate(861.486 892.6) rotate(-90) scale(517.981 441.014)">
+                                    <stop stop-color="#0033FF"/>
+                                    <stop offset="1" stop-color="#080B0E"/>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="absolute left-1/2 -translate-x-1/2 bottom-10 w-full max-w-6xl px-4">
+                        <h1 class="text-4xl lg:text-6xl 2xl:text-9xl font-display text-center uppercase">
+                            Get in touch
+                        </h1>
+
+                        <div class="w-full bg-dark-soft p-12 md:p-18 lg:p-24 lg:mb-24 project-metadata">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
+                                <div class="space-y-4">
+                                    <h3 class="font-display text-2xl">Send me an email</h3>
+                                    <a href="mailto:emiledjida404@gmail.com"
+                                       class="text-dark-fg underline underline-offset-4 hover:text-primary transition-colors"
+                                    >
+                                        emiledjida404@gmail.com
+                                    </a>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="font-display text-2xl">Whatsapp</h3>
+                                    <a href="https://wa.me/237694764773"
+                                       class="text-dark-fg underline underline-offset-4 hover:text-primary transition-colors"
+                                    >
+                                        (+237) 694 764 773
+                                    </a>
+                                </div>
+                                <div class="space-y-4">
+                                    <h3 class="font-display text-2xl">Social media</h3>
+                                    <div class="flex gap-4">
+                                        <a
+                                            href="https://www.linkedin.com/in/emile-djida-gongdebiya58b361197"
+                                            class="text-dark-fg underline underline-offset-4 hover:text-primary transition-colors"
+                                        >
+                                            LinkedIn
+                                        </a>
+                                        <a
+                                            href="https://github.com/emile-dg"
+                                            class="text-dark-fg underline underline-offset-4 hover:text-primary transition-colors"
+                                        >
+                                            GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center font-display text-lg lg:text-2xl py-8">
                             Emile DJIDA GONGDEBIYA © All rights reserved, 2026
                         </div>
                     </div>
@@ -418,7 +520,7 @@ onBeforeUnmount(() => {
 
 .fluted > svg {
     will-change: backdrop-filter;
-    width: calc(100% / 30);
+    width: calc(100% / 25);
     height: 100%;
     opacity: 100%;
     mix-blend-mode: overlay;

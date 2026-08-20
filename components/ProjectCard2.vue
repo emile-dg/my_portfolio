@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
             'w-full',
             isVertical
                 ? 'flex flex-col'
-                : 'grid grid-cols-1 lg:grid-cols-5',
+                : 'grid grid-cols-1 xl:grid-cols-5',
         ]"
     >
         <!-- Image -->
@@ -143,7 +143,7 @@ onBeforeUnmount(() => {
                 isVertical
                     ? 'aspect-video'
                     : 'aspect-video lg:aspect-square lg:col-span-3',
-                isReverse ? 'order-1 lg:order-2' : 'order-1',
+                isReverse ? 'order-1 xl:order-2' : 'order-1',
             ]"
         >
             <img
