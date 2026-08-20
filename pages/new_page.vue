@@ -315,25 +315,25 @@ onBeforeUnmount(() => {
                 <header class="py-4 sm:py-6 md:py-12">
                     <div class="container w-full px-4 sm:px-6 xl:px-0 lg:mx-auto">
                         <div class="w-full flex flex-col md:grid md:grid-cols-12 items-center gap-3 sm:gap-4 md:gap-6">
-                            <div class="md:col-span-4 w-full md:w-auto order-2 md:order-1">
-                                <nav
-                                    class="flex items-center justify-center md:justify-start gap-4 sm:gap-6 md:gap-12 text-sm sm:text-base md:text-xl">
-                                    <a href="#">Home</a>
-                                    <a href="#">Contact</a>
-                                </nav>
-                            </div>
-                            <div class="md:col-span-4 inline-flex items-center justify-center order-1 md:order-2">
+                            <div class="md:col-span-6 inline-flex ">
                                 <div
                                     class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-display font-bold text-center select-none tracking-tighter capitalize">
                                     <span>Emile</span>
                                     <span>Djida</span>
                                 </div>
                             </div>
-                            <div class="md:col-span-4 inline-flex items-center justify-center md:justify-end order-3 w-full md:w-auto">
-                                <div class="text-xs sm:text-sm md:text-base">
-                                    <a href="#">Version Française</a>
-                                </div>
+                            <div class="md:col-span-6 w-full md:w-auto">
+                                <nav
+                                    class="flex items-end justify-center md:justify-end gap-4 sm:gap-6 md:gap-12 text-sm sm:text-base md:text-xl">
+                                    <a href="#">Home</a>
+                                    <a href="#">Contact</a>
+                                </nav>
                             </div>
+<!--                            <div class="md:col-span-4 inline-flex items-center justify-center md:justify-end order-3 w-full md:w-auto">-->
+<!--                                <div class="text-xs sm:text-sm md:text-base">-->
+<!--                                    <a href="#">Version Française</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </header>
@@ -346,7 +346,7 @@ onBeforeUnmount(() => {
                                 <span>& Product Engineer</span>
                             </h1>
                             <div class="flex flex-col xl:flex-row lg:items-between gap-6 lg:gap-8">
-                                <div class="w-full space-y-3 sm:space-y-4">
+                                <div class="w-full space-y-3 sm:space-y-4 max-w-3xl">
                                     <p class="text-sm sm:text-base md:text-lg text-pretty">
                                         I design and build production-grade software from end-to-end — from product UX and system architecture to
                                         frontend,
