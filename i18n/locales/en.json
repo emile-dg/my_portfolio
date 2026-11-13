@@ -40,7 +40,7 @@
                 "role": "Lead Software Engineer",
                 "company": "CRYPTOACCOUNTING",
                 "location": "Paris, France.",
-                "period": "Since May 2023",
+                "period": "From May 2023 - March 2026",
                 "summary": "Led development across frontend, backend, deployment, security, and accounting workflows for a production SaaS platform.",
                 "detailsLink": "/experience/cryptoaccounting"
             },
@@ -103,5 +103,20 @@
             "label": "Whatsapp",
             "cta": "Send a text message"
         }
+    },
+    "portfolio": {
+        "meta": { "title": "Emile DJIDA G. — Software, from first decision to production", "description": "Senior full-stack and product engineer building useful software and owning the work from product decisions through launch and maintenance." },
+        "nav": { "work": "Work", "experience": "Experience", "contact": "Contact" },
+        "hero": { "role": "Senior full-stack & product engineer", "headline": "I build software and see it through.", "intro": "I turn complex workflows into products people can use. I own the work from the first product decisions through launch and maintenance.", "workAction": "See selected work", "resumeAction": "Download résumé", "caption": "PRODUCT THINKING / ENGINEERING / DELIVERY" },
+        "work": { "kicker": "Selected work", "heading": "Products built to work in the real world.", "indexLabel": "Jump to a project", "readCaseStudy": "Read the case study" },
+        "projects": {
+            "fibisoft": { "name": "Fibisoft", "category": "Hiring workflows / Product design / Full-stack delivery", "coverAlt": "Fibisoft wordmark on a cobalt blue editorial cover", "summary": "Fibisoft helps hiring teams structure recruitment, evaluate candidates consistently, and keep candidate history across campaigns. I designed the hiring workflows and built the product from the first decisions through deployment." },
+            "cryptoaccounting": { "name": "CryptoAccounting", "category": "Financial software / Product ownership", "imageAlt": "CryptoAccounting dashboard showing accounting reports and cryptocurrency balances", "summary": "CryptoAccounting turns cryptocurrency transaction data into accounting records professionals can work with. I owned the production software across data imports, accounting logic, the web interface, security, and deployment." },
+            "weespin": { "name": "Weespin", "category": "Deep links / Product interface", "summary": "Weespin helps teams manage smart links across web and mobile. I designed how users create links, configure routing rules, and review performance." },
+            "xentryo": { "name": "Xentryo", "category": "ERP / Modular systems", "summary": "Xentryo is a modular foundation for business applications. I designed shared modules for access, organizations, accounting, and inventory so different products could reuse the same core." },
+            "reap": { "name": "REAP", "category": "Sports data / Backend systems", "summary": "REAP gives basketball coaches and staff a way to analyze player and game data. I built the backend that turns data from multiple sources into records the mobile app can query." }
+        },
+        "experience": { "kicker": "Experience", "heading": "Ownership across teams and products.", "cealisRole": "Software engineering & delivery" },
+        "contact": { "kicker": "Get in touch", "heading": "Let's talk about what you're building.", "socialLabel": "Social links" }
     }
 }

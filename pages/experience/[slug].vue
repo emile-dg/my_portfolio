@@ -3,6 +3,7 @@ import {ArrowLeft} from 'lucide-vue-next'
 
 const route = useRoute()
 const {locale, t} = useI18n()
+const localePath = useLocalePath()
 const slug = route.params.slug as string
 
 const {data: experience} = await useAsyncData(
@@ -29,7 +30,7 @@ useHead({
     <main class="container mx-auto px-4 xl:px-0 py-16">
         <!-- Back link -->
         <nuxt-link
-            to="/#experience"
+            :to="localePath('/#experience')"
             class="inline-flex items-center gap-2 text-sm font-bold border border-black px-3 py-1.5 hover:bg-black hover:text-white transition-colors mb-12"
         >
             <ArrowLeft :size="14"/>

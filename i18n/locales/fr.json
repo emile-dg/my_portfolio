@@ -103,5 +103,20 @@
             "label": "Whatsapp",
             "cta": "Envoyer un message"
         }
+    },
+    "portfolio": {
+        "meta": { "title": "Emile DJIDA G. — Des premières décisions produit à la production", "description": "Ingénieur logiciel senior full-stack et produit. Je conçois des logiciels utiles et prends en charge leur développement, de la stratégie produit à la mise en production et à la maintenance." },
+        "nav": { "work": "Projets", "experience": "Parcours", "contact": "Contact" },
+        "hero": { "role": "Ingénieur logiciel senior · Full-stack et produit", "headline": "Je conçois des logiciels et je les fais vivre en production.", "intro": "Je transforme des processus complexes en logiciels simples à utiliser. Je prends en charge le travail, des premières décisions produit à la mise en production et à la maintenance.", "workAction": "Voir les projets", "resumeAction": "Télécharger le CV", "caption": "PRODUIT / INGÉNIERIE / LIVRAISON" },
+        "work": { "kicker": "Projets sélectionnés", "heading": "Des produits conçus pour le terrain.", "indexLabel": "Accéder à un projet", "readCaseStudy": "Lire l’étude de cas" },
+        "projects": {
+            "fibisoft": { "name": "Fibisoft", "category": "Recrutement / Conception produit / Développement full-stack", "coverAlt": "Logo Fibisoft sur une couverture éditoriale bleu cobalt", "summary": "Fibisoft aide les équipes à structurer leur recrutement, évaluer les candidatures de façon cohérente et conserver leur historique. J’ai conçu les parcours de recrutement et construit le produit, des premières décisions jusqu’au déploiement." },
+            "cryptoaccounting": { "name": "CryptoAccounting", "category": "Logiciel financier / Responsabilité produit", "imageAlt": "Tableau de bord CryptoAccounting avec les rapports comptables et les soldes en cryptomonnaies", "summary": "CryptoAccounting transforme les transactions en cryptomonnaies en écritures comptables exploitables. J’ai pris en charge le logiciel en production, des imports et de la logique comptable à l’interface, la sécurité et au déploiement." },
+            "weespin": { "name": "Weespin", "category": "Liens profonds / Interface produit", "summary": "Weespin aide les équipes à gérer des liens intelligents sur le web et les appareils mobiles. J’ai conçu la création des liens, le paramétrage des redirections et le suivi de leurs performances." },
+            "xentryo": { "name": "Xentryo", "category": "ERP / Systèmes modulaires", "summary": "Xentryo est une base modulaire pour créer des applications métier. J’ai conçu des modules communs pour les accès, les organisations, la comptabilité et les stocks afin que plusieurs produits partagent le même socle." },
+            "reap": { "name": "REAP", "category": "Données sportives / Systèmes backend", "summary": "REAP aide les entraîneurs et les équipes de basketball à analyser les données des joueurs et des matchs. J’ai développé le backend qui transforme des données de plusieurs sources en informations exploitables par l’application mobile." }
+        },
+        "experience": { "kicker": "Parcours", "heading": "Prendre en charge des produits et leur livraison.", "cealisRole": "Ingénierie logicielle et livraison produit" },
+        "contact": { "kicker": "Contact", "heading": "Parlons de votre prochain produit.", "socialLabel": "Réseaux sociaux" }
     }
 }
