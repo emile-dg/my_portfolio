@@ -278,35 +278,6 @@ onBeforeUnmount(() => {
                     <div class="scale-0 absolute left-1/2 top-1/2 -translate-1/2 w-50 xl:w-200 h-50 xl:h-200  bg-[#206FC8] rounded-full shape"></div>
                 </div>
             </div>
-            <div class="flex fluted overflow-hidden gap-0">
-                <svg class="fluted-svg" v-for="i in 25" :key="i" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <foreignObject x="-180" y="-181" width="429.12" height="1322.62">
-                        <div xmlns="http://www.w3.org/1999/xhtml"
-                             style="backdrop-filter:blur(120px);clip-path:url(#bgblur_0_43_227_clip_path);height:100%;width:100%"></div>
-                    </foreignObject>
-                    <g data-figma-bg-blur-radius="180">
-                        <mask id="path-1-inside-1_43_227" fill="white">
-                            <path d="M0 -1H69.12V961.618H0V-1Z"/>
-                        </mask>
-                        <path d="M0 -1H69.12V961.618H0V-1Z" fill="url(#paint0_linear_43_227)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-                        <path d="M0 -1H69.12V961.618H0V-1Z" fill="url(#paint1_linear_43_227)" fill-opacity="0.2" style="mix-blend-mode:color-dodge"/>
-                        <path
-                            d="M69.12 961.618V962.618H70.12V961.618H69.12ZM0 961.618H-1V962.618H0V961.618ZM69.12 -1H68.12V961.618H69.12H70.12V-1H69.12ZM69.12 961.618V960.618H0V961.618V962.618H69.12V961.618ZM0 961.618H1V-1H0H-1V961.618H0Z"
-                            fill="#0A0807" fill-opacity="0.1" mask="url(#path-1-inside-1_43_227)"/>
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear_43_227" x1="69.12" y1="480.309" x2="0" y2="480.309" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="white"/>
-                            <stop offset="0.3" stop-color="#0A0807"/>
-                            <stop offset="1" stop-color="white"/>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_43_227" x1="48.5176" y1="1084.71" x2="0.237093" y2="1082.99" gradientUnits="userSpaceOnUse">
-                            <stop/>
-                            <stop offset="1" stop-color="#0431E4"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
             <div class="grad"/>
         </div>
 
@@ -349,14 +320,11 @@ onBeforeUnmount(() => {
                                 <div class="w-full space-y-3 sm:space-y-4 max-w-3xl">
                                     <p class="text-sm sm:text-base md:text-lg text-pretty">
                                         I design and build production-grade software from end-to-end — from product UX and system architecture to
-                                        frontend,
-                                        backend, APIs, databases, deployment, and long-term evolution.
+                                        frontend, backend, APIs, databases, deployment, and long-term evolution.
                                     </p>
                                     <p class="text-sm sm:text-base md:text-lg text-pretty">
                                         I work at the intersection of engineering and product design, turning complex requirements into reliable
-                                        systems
-                                        and
-                                        polished user experiences.
+                                        systems and polished user experiences.
                                     </p>
                                 </div>
                                 <div class="w-full space-y-3 sm:space-y-4">
